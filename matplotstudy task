@@ -1,0 +1,27 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x_start = 2 * np.pi   # -2пи
+x_end = -2 * np.pi      # 2пи
+num_points = 1000     # количество точек
+
+x = np.linspace(x_start, x_end, num_points)
+print(x)
+
+y = np.tan(x)
+
+y_sort = []
+for i in y:
+    if abs(i) > 10:
+        y_sort.append(None)
+    else:
+        y_sort.append(i)
+
+plt.plot(x,y_sort,label='tan(x)', linewidth=1.5, color='b')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('График тангенса')
+plt.legend()
+plt.tight_layout()
+plt.axline((0, 0), (6,0), linewidth=2, color='black',alpha=0.5)
+plt.show()
