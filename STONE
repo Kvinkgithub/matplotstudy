@@ -1,0 +1,28 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Дано
+km_v_chas=20
+v = km_v_chas * 1000 / 3600  # м/с
+ygol = np.radians(45)        # угол, радианы
+g = 9.81                     # гравитация
+
+# Составляющие
+vx = v * np.cos(ygol)
+vy = v * np.sin(ygol)
+
+# Время и дальность
+t = 2 * vy / g
+R = vx * t
+
+# Траектория
+t_arr = np.linspace(0, t, 100)
+x = vx * t_arr
+y = vy * t_arr - 0.5 * g * t_arr**2
+
+# График
+plt.plot(x, y)
+plt.grid(True)
+plt.xlabel('Расстояние по горизонтали,м')
+plt.ylabel('Высота,м')
+plt.show()
