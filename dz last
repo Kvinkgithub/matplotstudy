@@ -1,0 +1,28 @@
+import matplotlib.pyplot as plt
+#
+# categories = [1, 2, 3, 4, 5, 6, 7, 8]
+#
+# green = [55, 60, 180, 42, 80]
+# red = [120, 70, 135]
+#
+# colors = ['green', 'green', 'green', 'red', 'red', 'green', 'green', 'red']
+#
+# green_index = 0
+# red_index = 0
+# values = []
+#
+# for color in colors:
+#     if color == 'green':
+#         values.append(green[green_index])
+#         green_index += 1
+#     else:
+#         values.append(red[red_index])
+#         red_index += 1
+# plt.bar(categories, values, color=colors, edgecolor='black')
+# plt.show()
+
+ochenki=[5,5,4,3,3,2,4,4]
+ochenki.sort()
+plt.hist(ochenki,bins=[2,3,4,5,6],edgecolor='black')
+plt.xticks([2,3,4,5])
+plt.show()
