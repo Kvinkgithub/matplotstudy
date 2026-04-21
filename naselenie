@@ -1,0 +1,22 @@
+#задача с насилением в 2025 году
+# city=['Нижегородская обл.','Респ. Татарстан','Респ. Мордовия','Чувашская Респ.','Респ. Марий Эл']
+# naselenie=[3062000,4003000,758895,1176000,666202]
+# razdelenie=[0,0,0,0.2,0]
+# plt.pie(naselenie,labels=city,autopct='%1.1f%%',explode=razdelenie,startangle=50,wedgeprops={'edgecolor': 'black', 'linewidth': 1})
+# plt.show()
+#
+# #задача с насилением с 2020 по 2025 год
+# city=['Нижегородская обл.','Респ. Татарстан','Респ. Мордовия','Чувашская Респ.','Респ. Марий Эл']
+# nijegorod_nas = [3135000, 3119000, 3102000, 3090000, 3075000, 3062000]
+# tatarstan_nas = [3902000, 3907000, 3916000, 3930000, 3965000, 4003000]
+# mordovia_nas = [790197, 783552, 781440, 771373, 765891, 758895]
+# chuvashia_nas = [1218000, 1207875, 1201000, 1194000, 1186000, 1176000]
+# mariy_el_nas = [679417, 677097, 676351, 672321, 669854, 666202]
+#
+# years = [2020, 2021, 2022, 2023, 2024, 2025]
+# for i in range(6):
+#     naselenie = [nijegorod_nas[i],tatarstan_nas[i],mordovia_nas[i],chuvashia_nas[i],mariy_el_nas[i]]
+#     print(naselenie)
+#     plt.pie(naselenie,labels=city,autopct='%1.1f%%',startangle=50,wedgeprops={'edgecolor': 'black', 'linewidth': 1})
+#     plt.title(f'Население регионов в {years[i]} году')
+#     plt.show()
