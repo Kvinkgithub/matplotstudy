@@ -9,9 +9,7 @@ data = json.loads(response.read().decode('utf-8'))
 table = PrettyTable()
 table.field_names = ["ID", "Name", "Username", "Email", "Phone", "Website"]
 
-# Заполняем строки
 for i in data:
     table.add_row([i['id'],i['name'],i['username'],i['email'],i['phone'],i['website']])
 
-# Выводим таблицу
 print(table)
