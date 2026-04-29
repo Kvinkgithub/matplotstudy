@@ -1,0 +1,17 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+
+dataset = pd.read_csv('titanic.csv')
+
+sns.countplot(data=dataset, x='Пол', hue='Выживший')
+plt.title('Выживаемость по полу')
+plt.show()
+
+sns.countplot(data=dataset, x='Класс', hue='Выживший')
+plt.title('Выживаемость по классу')
+plt.show()
+
+sns.histplot(data=dataset, x='Возраст', bins=30)
+plt.title('Распределение возраста пассажиров')
+plt.show()
