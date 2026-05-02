@@ -1,0 +1,29 @@
+user_num = input("Введите числа: ")
+split_user_num = user_num.split(' ')
+a = split_user_num.pop(0)
+print(split_user_num)
+
+first = []
+for i in split_user_num:
+    first.append(i[0])
+print(first)
+
+second = []
+for i in split_user_num:
+    second.append(i[1])
+print(second)
+
+count_num=0
+chepocka=0
+
+for i in range(len(split_user_num)):
+   first_num=first[i]
+   second_num=second[i]
+   a=int(first_num)*int(second_num)
+   chepocka = a
+   for j in range(1):
+       if first_num==second_num:
+           count_num+=1
+       else:
+           count_num-=1
+print(count_num)
